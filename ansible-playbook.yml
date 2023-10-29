@@ -20,4 +20,4 @@
   #- name : delete all containers
    # shell: docker rm $(docker ps -a -q)
   - name: Deploy Docker Container
-    command: docker run -itd -p 8088:8081 dhrutidocker/insuranceproject:1.0
+    command: docker run -itd -p 8088:8080 dhrutidocker/insuranceproject:1.0
