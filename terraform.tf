@@ -46,6 +46,7 @@ resource "aws_route_table" "tf-route-table" {
 resource "aws_subnet" "tf-sn" {
   vpc_id     = aws_vpc.tf-proj-vpc.id
   cidr_block = "172.31.0.0/16"
+  availability_zone = "ap-south-1b"
 
   tags = {
     Name = "tf-subnet"
