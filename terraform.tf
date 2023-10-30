@@ -113,6 +113,7 @@ resource "aws_eip" "tf-eip" {
 resource "aws_instance" "Production-Server" {
   ami           = "ami-0287a05f0ef0e9d9a"
   instance_type = "t2.micro"
+  availability_zone = "ap-south-1b"
   key_name = "awskeypair"
   network_interface {
   device_index = 0
